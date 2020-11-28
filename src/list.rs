@@ -62,10 +62,10 @@ impl Component for ListGroupItem {
     }
 
     fn view(&self) -> Html {
-        let mut classes = vec!["list-group-item".to_string()];
+        let mut classes = vec!["list-group-item"];
 
         if self.props.active {
-            classes.push("active".to_string())
+            classes.push("active")
         }
 
         html! {
